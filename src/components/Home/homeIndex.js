@@ -22,7 +22,7 @@ function Home() {
               Provides information regarding top most affected countries due to
               Covid-19.
             </p>
-            <Link to="/covid">
+            <Link to="/Reactapp/covid">
               <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
                 Button
               </button>
@@ -42,7 +42,7 @@ function Home() {
             <p class="leading-relaxed text-base">
               Provides basic weather information of popular cities.
             </p>
-            <Link to="/weather">
+            <Link to="/Reactapp/weather">
               <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
                 Button
               </button>

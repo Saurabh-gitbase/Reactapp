@@ -10,9 +10,9 @@ function App() {
   return (
     <Router>
           <Switch>
-            <Route path="/" exact component={Home}/>
-            <Route path="/covid" component={Covid}/>
-            <Route path="/weather" component={Weather}/>
+            <Route path="/Reactapp" exact component={Home}/>
+            <Route path="/Reactapp/covid" component={Covid}/>
+            <Route path="/Reactapp/weather" component={Weather}/>
           </Switch>
     </Router>
     
