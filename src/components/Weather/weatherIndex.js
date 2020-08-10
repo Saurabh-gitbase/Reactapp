@@ -42,7 +42,7 @@ class Weather extends Component {
   };
 
   handleInput = (props) => {
-    console.log(props.target.value);
+    
     this.setState({
       userInput: props.target.value,
     });
@@ -69,7 +69,7 @@ class Weather extends Component {
   };
 
   handleWeatherRequest = () => {
-    console.log("handleweather");
+    
     let data = {};
     let futureData = [];
     axios
@@ -78,9 +78,7 @@ class Weather extends Component {
       )
       .then((response) => {
         let item = response.data;
-        console.log(item);
         data = item.consolidated_weather[0];
-        console.log(data);
         data.max_temp = String(data.max_temp).slice(0, 2);
         data.min_temp = String(data.min_temp).slice(0, 2);
         data.the_temp = String(data.the_temp).slice(0, 2);
@@ -121,15 +119,12 @@ class Weather extends Component {
             imgId: weather_state_abbr,
           });
         }
-        console.log(data);
-        console.log(futureData);
       })
       .then(() => {
         this.setState({ futureData: futureData, cityData: data });
-        console.log(futureData, data);
       });
   };
-
+  
   componentDidMount() {
     this.handleWeatherRequest();
   }
