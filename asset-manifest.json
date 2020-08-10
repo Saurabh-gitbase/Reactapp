@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Reactapp/static/css/main.479abc78.chunk.css",
+    "main.js": "/Reactapp/static/js/main.c7ded631.chunk.js",
+    "main.js.map": "/Reactapp/static/js/main.c7ded631.chunk.js.map",
+    "runtime-main.js": "/Reactapp/static/js/runtime-main.50c7724a.js",
+    "runtime-main.js.map": "/Reactapp/static/js/runtime-main.50c7724a.js.map",
+    "static/js/2.c487a060.chunk.js": "/Reactapp/static/js/2.c487a060.chunk.js",
+    "static/js/2.c487a060.chunk.js.map": "/Reactapp/static/js/2.c487a060.chunk.js.map",
+    "index.html": "/Reactapp/index.html",
+    "precache-manifest.1a15b32dfe750c6f34314873f4955bb7.js": "/Reactapp/precache-manifest.1a15b32dfe750c6f34314873f4955bb7.js",
+    "service-worker.js": "/Reactapp/service-worker.js",
+    "static/css/main.479abc78.chunk.css.map": "/Reactapp/static/css/main.479abc78.chunk.css.map",
+    "static/js/2.c487a060.chunk.js.LICENSE.txt": "/Reactapp/static/js/2.c487a060.chunk.js.LICENSE.txt",
+    "static/media/weather.jpg": "/Reactapp/static/media/weather.75d7281e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50c7724a.js",
+    "static/js/2.c487a060.chunk.js",
+    "static/css/main.479abc78.chunk.css",
+    "static/js/main.c7ded631.chunk.js"
+  ]
+}
