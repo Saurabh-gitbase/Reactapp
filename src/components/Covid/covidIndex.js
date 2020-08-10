@@ -84,7 +84,6 @@ class Covid extends Component {
       (item) => item.Country === country
     );
     this.setState({ currCountryDetail: currCountryDetail[0] });
-    console.log(this.state.globalDetails);
   };
 
   render() {
