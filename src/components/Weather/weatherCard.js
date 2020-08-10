@@ -4,7 +4,7 @@ function WeatherCard(props) {
   return (
     <div class="flex flex-col h-full w-full md:w-4/12 h-screen ">
       <div class="m-3 h-full">
-        <div class="flex flex-col bg-white h-full p-3 shadow-xl rounded-lg">
+        <div class="flex flex-col bg-red-100 h-full p-3 shadow-xl rounded-lg">
           <div class="flex flex-row justify-between">
             <div class="border-2 border-gray-500 p-1 h-10 shadow-md rounded-md ">
               <form onSubmit={props.handleCityDetail}>
@@ -13,11 +13,11 @@ function WeatherCard(props) {
                   placeholder="Search for places"
                   onChange={props.handleInput}
                   value={props.userInput}
-                  class="w-full h-full outline-none"
+                  class="w-full h-full outline-none bg-red-100"
                 ></input>
               </form>
             </div>
-            <Link to="/">
+            <Link to="/Reactapp">
               <img
                 src="https://img.icons8.com/dusk/64/000000/home-page.png"
                 class="h-11 w-11 rounded-full hover:shadow-md"

@@ -5,7 +5,7 @@ function Head(props) {
   return (
     <div class="h-3/12  flex justify-between items-center">
       <div class="pl-4">
-        <Link to="/">
+        <Link to="/Reactapp">
           <img
             src="https://img.icons8.com/dusk/64/000000/home-page.png"
             class="w-2/3 rounded-md hover:shadow-xl "

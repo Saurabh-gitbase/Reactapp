@@ -11,7 +11,7 @@ function App() {
     <Router>
           <Switch>
             <Route path="/Reactapp" exact component={Home}/>
-            <Route path="/Reactapp/covid" component={Covid}/>
+            <Route path="/Reactapp/covid"  component={Covid}/>
             <Route path="/Reactapp/weather" component={Weather}/>
           </Switch>
     </Router>

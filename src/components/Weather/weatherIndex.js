@@ -136,7 +136,7 @@ class Weather extends Component {
 
   render() {
     return (
-      <div class="flex flex-col md:flex-row text-gray-800 bg-gray-200 font-serif text-gray-900 ">
+      <div class="flex flex-col md:flex-row text-gray-800 bg-white font-serif text-gray-900 ">
         <WeatherCard
           cityData={this.state.cityData}
           handleInput={this.handleInput}
@@ -147,7 +147,7 @@ class Weather extends Component {
 
         <div class="flex flex-col w-full md:w-8/12 md:h-screen">
           <div class="m-3 md:h-full  md:overflow-y-auto">
-            <div class="flex flex-col p-3 h-full bg-white shadow-xl rounded-lg md:overflow-y-auto">
+            <div class="flex flex-col p-3 h-full bg-red-100 shadow-xl rounded-lg md:overflow-y-auto">
               <ListWeather futureData={this.state.futureData} />
               <DetailsCard cityData={this.state.cityData} />
             </div>
