@@ -14,7 +14,7 @@ class Covid extends Component {
       "South Africa",
       "United States of America",
     ],
-    dateDetail: "2020-08-10T09:53:55Z",
+    dateDetail: "2020-08-10",
     cntryDetails: [],
     currCountryDetail: {
       Country: "Brazil",
@@ -48,6 +48,7 @@ class Covid extends Component {
       .get("https://api.covid19api.com/summary")
       .then((response) => {
         dateData = response.data.Date;
+        dateData = dateData.slice(0,10);
         cntryData = response.data.Countries;
         globalData = response.data.Global;
       })
@@ -88,7 +89,7 @@ class Covid extends Component {
 
   render() {
     return (
-      <div className="antialiased w-full bg-gray-100 font-serif h-screen">
+      <div className="antialiased w-full md:bg-gray-100 font-serif h-screen">
         <div className="h-5/12 ">
           <Head
             cntryList={this.state.cntryList}
