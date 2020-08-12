@@ -13,7 +13,8 @@ function DetailsCard(props) {
               <div class="flex justify-center items-center w-1/2 h-full">
                 <img
                   src="https://img.icons8.com/clouds/100/000000/wind-turbine--v1.png"
-                  class="h-10/12" alt="img1"
+                  class="h-10/12"
+                  alt="img1"
                 />
               </div>
               <div class="flex flex-col justify-center w-1/2 h-full text-center sm:text-lg lg:text-2xl xl:text-3xl">
@@ -25,9 +26,12 @@ function DetailsCard(props) {
               <div class="flex flex-row justify-center items-center">
                 <img
                   src="https://img.icons8.com/ios-glyphs/30/000000/navigation.png"
-                  class="w-6 h-6 rounded-full shadow-md" alt="img2"
+                  class="w-6 h-6 rounded-full shadow-md"
+                  alt="img2"
                 />
-                <div class="text-lg lg:text-xl xl:text-2xl pl-2 ">{props.cityData.wind_direction_compass}</div>
+                <div class="text-lg lg:text-xl xl:text-2xl pl-2 ">
+                  {props.cityData.wind_direction_compass}
+                </div>
               </div>
             </div>
           </div>
@@ -39,7 +43,7 @@ function DetailsCard(props) {
               Humidity
             </div>
             <div class="flex justify-center items-center h-6/12 text-5xl md:text-6xl font-bold ">
-            {props.cityData.humidity} %
+              {props.cityData.humidity} %
             </div>
             <div class="h-4/12 rounded-r-md pt-1 px-1">
               <div class="flex flex-row justify-between text-gray-500 text-xs lg:text-lg xl:text-xl">
@@ -51,7 +55,7 @@ function DetailsCard(props) {
                 <div class="w-full h-4 lg:h-5 xl:h-6 bg-gray-100 rounded-l-full rounded-r-full  shadow-md">
                   <div
                     class="w-full h-full bg-blue-400 rounded-l-full rounded-r-full"
-                    style={{width:`${props.cityData.humidity}%`}}
+                    style={{ width: `${props.cityData.humidity}%` }}
                   ></div>
                 </div>
               </div>
@@ -80,11 +84,15 @@ function DetailsCard(props) {
                   <div class="pl-2">{props.cityData.sunrise} </div>
                   <div class="pr-2">{props.cityData.sunset} </div>
                 </div>
-                <div class="w-full h-full" style={{width:`${props.cityData.timepassed}%`}}>
+                <div
+                  class="w-full h-full"
+                  style={{ width: `${props.cityData.timepassed}%` }}
+                >
                   <div class="flex justify-end w-full">
                     <img
                       src="https://img.icons8.com/plasticine/100/000000/sun.png"
-                      class="h-10 lg:h-14 xl:h-16" alt="img3"
+                      class="h-10 lg:h-14 xl:h-16"
+                      alt="img3"
                     />
                   </div>
                 </div>

@@ -60,12 +60,13 @@ class Weather extends Component {
           this.setState({ userInput: "" });
           this.handleWeatherRequest();
         }
+        else{
+          alert(
+            "Error Not all city's are available. Please enter common cities."
+          );
+        }
       })
-      .catch(function (error) {
-        alert(
-          "Error Not all city's are available. Please enter common cities."
-        );
-      });
+
   };
 
   handleWeatherRequest = () => {
@@ -89,12 +90,7 @@ class Weather extends Component {
         data["sunset"] = sunset;
 
         let today = new Date();
-        let currtime =
-          today.getHours() +
-          ":" +
-          today.getMinutes() +
-          ":" +
-          today.getSeconds();
+        let currtime = today.getHours() +":" + today.getMinutes() + ":" + today.getSeconds();
         currtime = currtime.slice(0, 2);
         let total = sunset.slice(0, 2) - sunrise.slice(0, 2);
         let rem = currtime - sunrise.slice(0, 2);
@@ -110,8 +106,7 @@ class Weather extends Component {
           max_temp = String(max_temp).slice(0, 2);
           let min_temp = item.consolidated_weather[i].min_temp;
           min_temp = String(min_temp).slice(0, 2);
-          let weather_state_abbr =
-            item.consolidated_weather[i].weather_state_abbr;
+          let weather_state_abbr =item.consolidated_weather[i].weather_state_abbr;
           futureData.push({
             date: date,
             maxtemp: max_temp,

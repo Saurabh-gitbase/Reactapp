@@ -28,7 +28,7 @@ function WeatherCard(props) {
 
           <div class=" h-4/12 flex justify-center items-center ">
             <img
-              src="https://www.metaweather.com/static/img/weather/lc.svg"
+              src={`https://www.metaweather.com/static/img/weather/${props.cityData.weather_state_abbr}.svg`}
               alt="weatherimg"
               class=" h-11/12"
             />
